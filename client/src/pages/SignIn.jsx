@@ -57,16 +57,7 @@ export default function SignIn() {
       <h1 className='text-3xl text-center font-semibold my-7'>Sign In</h1>
       {error && <p className="text-red-500 text-center">{error}</p>}
       <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
-        <input
-          type="text"
-          placeholder='Username'
-          className='border p-3 rounded-lg'
-          id='username'
-          value={formData.username}
-          onChange={handleChange}
-        />
-
-        <input
+      <input
           type="email"
           placeholder='Email'
           className='border p-3 rounded-lg'
@@ -97,7 +88,7 @@ export default function SignIn() {
       </form>
 
       <div className='flex gap-2 mt-5'>
-        <p>Don't Have an account?</p>
+        <p>Don't have an account?</p>
         <Link to="/sign-up">
           <span className='text-blue-700'>Sign Up</span>
         </Link>
